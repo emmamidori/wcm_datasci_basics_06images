@@ -3,7 +3,6 @@ import os
 import glob
 import natsort
 import numpy as np
-import matplotlib.pyplot as plt
 import pandas as pd
 
 # get_files function:
@@ -68,5 +67,4 @@ def realign_data(in_data, align='max'):
             assert find_middle(d[column]) == mid_longest
             shifts[column] = mdiff
     return d, shifts
-
 
