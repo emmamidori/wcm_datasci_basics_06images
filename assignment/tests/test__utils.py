@@ -2,7 +2,6 @@ import os
 import glob
 import natsort
 import numpy as np
-import matplotlib.pyplot as plt
 import pandas as pd
 
 from ..functions.utils import find_middle
@@ -31,5 +30,4 @@ def test_realign_max():
     test_df = test_df.T
     d,shifts = realign_data(test_df)
     np.testing.assert_array_equal(true_shift, shifts)
-
 
